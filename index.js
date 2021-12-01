@@ -21,6 +21,12 @@ app.get('/', async (req, res) => {
 
 })
 
+app.get('/respondToMeYoWatafack', async (req,res) => {
+    console.log("REsponded")
+    res.send({response: "kek"})
+})
+
+
 app.post("/getTable", async (req,res) => {
     try {
         let orderby;
