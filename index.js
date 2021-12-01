@@ -161,7 +161,11 @@ app.post("/login", async (req, res) => {
     if (req.body.Login.toLowerCase() === "adnanthebest" && req.body.Pass.toLowerCase() === "dbs341") {
         console.log("ADNAN THE BEST")
         res.setHeader('Access-Control-Allow-Origin', '*');
+        res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
         res.send({isLogged: true})
+        
+    
     }
 
 })
