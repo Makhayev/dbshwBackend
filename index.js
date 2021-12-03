@@ -158,7 +158,7 @@ app.post("/customQuery", async (req, res) => {
 app.post("/login", async (req, res) => {
     console.log(req.body)
 
-    if (req.body.Login.toLowerCase() === "adnanthebest" && req.body.Pass.toLowerCase() === "dbs341") {
+    if (req.body.Login.toLowerCase() === "admin" && req.body.Pass.toLowerCase() === "341") {
         console.log("ADNAN THE BEST")
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
